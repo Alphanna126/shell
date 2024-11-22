@@ -13,16 +13,21 @@ mkdir analysis output
 touch README.md
 touch analysis/main.py
 
-# download client data
-wget -O rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
+# download client data - Linux code
+#wget -O rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
+
+# download client data - Windows code
+curl -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
 unzip rawdata.zip
 
 ###########################################
 # Complete assignment here
 
 # 1. Create a directory named data
+mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw
+mv ./rawdata ./data/raw
 
 # 3. List the contents of the ./data/raw directory
 
